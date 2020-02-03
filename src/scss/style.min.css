@@ -1,2 +1,2 @@
-html{font-size:62.5%;padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box}.header{text-align:center;font-size:10rem}
+html{font-size:62.5%;padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box}body{background-color:red}.headertext{top:40%;left:50%;text-align:center;font-family:'Sigmar One', cursive;font-size:40rem;font-weight:800;letter-spacing:.5rem;-webkit-animation-name:shrink;animation-name:shrink;-webkit-animation-duration:1.5s;animation-duration:1.5s;text-transform:uppercase;text-shadow:4px 4px 2px rgba(51,110,123,0.5);margin-top:2rem}
 /*# sourceMappingURL=style.min.css.map */
