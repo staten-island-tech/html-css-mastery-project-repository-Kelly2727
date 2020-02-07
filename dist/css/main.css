@@ -145,25 +145,25 @@ html {
 }
 
 .header .heading-primary .heading-primary-main {
-  font-size: 20rem;
+  font-size: 4rem;
   text-shadow: 3px 3px #333;
   width: 80vw;
-  letter-spacing: 1rem;
+  letter-spacing: .5rem;
   text-align: center;
   margin: 0 auto;
 }
 
 @media (min-width: 600px) {
   .header .heading-primary .heading-primary-main {
-    font-size: 6rem;
-    letter-spacing: 1.8rem;
+    font-size: 5rem;
+    letter-spacing: 1rem;
   }
 }
 
 @media (min-width: 900px) {
   .header .heading-primary .heading-primary-main {
-    font-size: 10rem;
-    letter-spacing: 2.2rem;
+    font-size: 8rem;
+    letter-spacing: 1.5rem;
   }
 }
 
