@@ -16,13 +16,13 @@
 
 @media (min-width: 900px) {
   .user-gallery {
-    height: 50vh;
+    height: 90vh;
   }
 }
 
 .user-gallery-header {
   font-size: 2rem;
-  color: white;
+  color: #77435d;
   text-transform: uppercase;
 }
 
@@ -44,7 +44,7 @@
   }
 }
 
-.user-gallery-header .user-gallery-gallery {
+.user-gallery-gallery {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +62,7 @@
 }
 
 @media (min-width: 900px) {
-  .user-gallery-header .user-gallery-gallery {
+  .user-gallery-gallery {
     height: 60%;
     width: 90%;
     -webkit-box-orient: horizontal;
@@ -72,15 +72,14 @@
   }
 }
 
-.user-gallery-header .user-gallery-gallery .user-gallery-image {
-  height: 8rem;
+.user-gallery-gallery .user-gallery-images {
   width: 90%;
   padding: 1rem;
 }
 
 @media (min-width: 900px) {
-  .user-gallery-header .user-gallery-gallery .user-gallery-image {
-    height: 3rem;
+  .user-gallery-gallery .user-gallery-images {
+    height: 20rem;
     width: auto;
   }
 }
@@ -100,8 +99,8 @@ html {
 .header {
   position: relative;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(117, 221, 216, 0.5)), to(rgba(245, 225, 182, 0.5))), url(media/);
-  background-image: linear-gradient(to right bottom, rgba(117, 221, 216, 0.5), rgba(245, 225, 182, 0.5)), url(media/);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(139, 255, 249, 0.5)), to(rgba(245, 225, 182, 0.5))), url(../dist/media/map.png);
+  background-image: linear-gradient(to right bottom, rgba(139, 255, 249, 0.5), rgba(245, 225, 182, 0.5)), url(../dist/media/map.png);
   background-position: top;
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
@@ -132,7 +131,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   width: 100vw;
   text-align: center;
   font-weight: 700;
@@ -178,6 +177,65 @@ html {
 @media (min-width: 900px) {
   .header .heading-primary .heading-primary-sub {
     font-size: 3rem;
+  }
+}
+
+.cities {
+  background-color: #fff0cf;
+  /*.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }*/
+}
+
+.cities .cities-text-box {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  width: 70vw;
+  margin: 0 auto;
+  /*text-align: center;*/
+  color: #383838;
+}
+
+@media (min-width: 900px) {
+  .cities .cities-text-box {
+    font-size: 2rem;
   }
 }
 

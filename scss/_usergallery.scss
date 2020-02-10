@@ -6,13 +6,13 @@
     justify-content: center;
     align-items: center;
     @include laptop {
-        height: 50vh;
+        height: 90vh;
     }
 }
 
 .user-gallery-header{
     font-size: 2rem;
-    color: white;
+    color: #77435d;
     text-transform: uppercase;
     @include tablet{ 
         font-size: 3rem; 
@@ -23,7 +23,7 @@
      @include desktop{ 
          font-size: 5rem;
     }
-
+}
 .user-gallery-gallery{
     width: 100%;
     display: flex;
@@ -36,14 +36,12 @@
         width: 90%;
         flex-direction: row;
     }
- .user-gallery-image{
-        height: 8rem;
+ .user-gallery-images{
         width:90%;
         padding: 1rem;
         @include laptop{
-            height: 3rem;
+            height: 20rem;
             width: auto;
         }
     }
-}
 }

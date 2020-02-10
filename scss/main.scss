@@ -11,7 +11,7 @@ html {
   } */
 }
  
-body {
+body { 
   background-color: color(rgb(248, 255, 255));
 }
   
@@ -24,11 +24,10 @@ body {
       to right bottom,
       rgba(color(primary), 0.5),
       rgba(color(primary-light), 0.5)
-    ),
-    url(media/);
-  background-position: top;
-  background-size: cover;
- 
+    ),url(../dist/media/map.png);
+    background-position: top;
+    background-size: cover;
+    
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%);
  
@@ -45,7 +44,7 @@ body {
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     width: 100vw;
     text-align: center;
     //text-shadow: 3px 3px 8px #111;
@@ -83,6 +82,65 @@ body {
   }
   
 }
+
+.cities{
+background-color: #fff0cf;
+
+.cities-text-box{
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  width: 70vw;
+  margin: 0 auto;
+  /*text-align: center;*/
+  color: rgb(56, 56, 56);
+  @include laptop {
+    font-size: 2rem;
+  }
+}
+
+
+  /*.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }*/
+}
+
  
 @keyframes slide-in {
   0% {
