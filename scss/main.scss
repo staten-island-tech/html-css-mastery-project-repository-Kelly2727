@@ -56,7 +56,7 @@ body {
     .heading-primary-main {
       font-size: 4rem;
       text-shadow: 3px 3px #333;
-      width: 80vw;
+      width: 90vw;
       letter-spacing: 0.5rem;
       text-align: center;
       margin: 0 auto;
@@ -71,7 +71,7 @@ body {
     }
     .heading-primary-sub {
       font-size: 1.5rem;
-      width: 80vw;
+      width: 90vw;
       margin: 0 auto;
       text-align: center;
       color: white;
@@ -89,7 +89,7 @@ background-color: #fff0cf;
 .cities-text-box{
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 1.7rem;
   width: 70vw;
   margin: 0 auto;
   /*text-align: center;*/
@@ -100,18 +100,18 @@ background-color: #fff0cf;
 }
 
 
-  /*.container {
+  .container {
     position: relative;
     width: 50%;
   }
   
-  .image {
+  .user-gallery-images{
     display: block;
     width: 100%;
     height: auto;
   }
   
-  .overlay {
+  /*.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -138,8 +138,8 @@ background-color: #fff0cf;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }*/
-}
+  }
+}*/
 
  
 @keyframes slide-in {
