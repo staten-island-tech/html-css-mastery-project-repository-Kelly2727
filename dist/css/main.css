@@ -146,8 +146,7 @@ html {
 .header .heading-primary .heading-primary-main {
   font-size: 4rem;
   text-shadow: 3px 3px #333;
-  width: 80vw;
-
+  width: 90vw;
   letter-spacing: 0.5rem;
   text-align: center;
   margin: 0 auto;
@@ -169,7 +168,7 @@ html {
 
 .header .heading-primary .heading-primary-sub {
   font-size: 1.5rem;
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   text-align: center;
   color: white;
@@ -183,51 +182,12 @@ html {
 
 .cities {
   background-color: #fff0cf;
-  /*.container {
-    position: relative;
-    width: 50%;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
-  
-  .container:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }*/
 }
 
 .cities .cities-text-box {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 1.7rem;
   width: 70vw;
   margin: 0 auto;
   /*text-align: center;*/
@@ -238,6 +198,46 @@ html {
   .cities .cities-text-box {
     font-size: 2rem;
   }
+}
+
+.cities .container {
+  position: relative;
+  width: 50%;
+}
+
+.cities .user-gallery-images {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cities .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #8bfff9;
+}
+
+.cities .container:hover .overlay {
+  opacity: 1;
+}
+
+.cities .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 @-webkit-keyframes slide-in {

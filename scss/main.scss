@@ -111,7 +111,7 @@ background-color: #fff0cf;
     height: auto;
   }
   
-  /*.overlay {
+  .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -121,7 +121,8 @@ background-color: #fff0cf;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: rgba(color(primary));
+
   }
   
   .container:hover .overlay {
@@ -139,7 +140,7 @@ background-color: #fff0cf;
     transform: translate(-50%, -50%);
     text-align: center;
   }
-}*/
+}
 
  
 @keyframes slide-in {
