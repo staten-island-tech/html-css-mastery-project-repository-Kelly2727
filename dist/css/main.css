@@ -287,6 +287,8 @@ html {
 }
 
 .cities {
+  border-style: dashed;
+  color: #77435d;
   background-color: #fff0cf;
 }
 
