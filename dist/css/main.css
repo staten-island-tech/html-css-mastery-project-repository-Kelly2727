@@ -471,4 +471,8 @@ html {
             transform: translateX(0);
   }
 }
+
+.food {
+  background-color: #77435d;
+}
 /*# sourceMappingURL=main.css.map */
