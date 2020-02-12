@@ -18,6 +18,29 @@ body {
   .header {
     position: relative;
     height: 100vh;
+
+    .covermap{
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      height: auto;
+      width: 20rem;
+      position: absolute;
+
+      @include tablet{
+        width: auto;
+        height: 35rem;
+        left: 52%;
+        top: 40%;
+      }
+      @include laptop{
+        top: 10%;
+        left: 50%;
+        height: auto;
+        width: 70rem;
+    }
+      
+    }
  
    // background-color: rgba(color(primary), 1);
    background-image: linear-gradient(
@@ -28,15 +51,18 @@ body {
     background-position: top;
     background-size: cover;
     
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%);
+  /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100vh, 0% 100%);*/
+
  
   .text-box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;}
+    text-align: center;
+    
+  }
  
   .heading-primary {
     display: flex;
@@ -44,14 +70,10 @@ body {
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    /*text-transform: uppercase;*/
     width: 100vw;
     text-align: center;
-    //text-shadow: 3px 3px 8px #111;
     font-weight: 700;
-    animation-name: slide-in;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+
  
     .heading-primary-main {
       font-size: 4rem;
@@ -74,12 +96,37 @@ body {
       width: 90vw;
       margin: 0 auto;
       text-align: center;
-      color: white;
+      color: rgb(0, 63, 127);
+      transition-delay: 2.1s;
+      animation-timing-function: ease-out;
       @include laptop {
         font-size: 3rem;
       }
     }
-  }
+    .coverplane{
+      position: absolute;
+      top: 85%;
+      left: 72%;
+      height: auto;
+      width: 5rem;
+      animation-name: slide-in;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+     
+      @include tablet{
+        width: auto;
+        height: 10rem;
+        left: 45rem;
+        top: 20rem;
+      }
+      @include laptop{
+        top: 55%;
+        left: 57%;
+        height: auto;
+        width: 27rem;
+    }
+    }
+   }
   
 }
 
@@ -99,7 +146,7 @@ background-color: #fff0cf;
   }
 }
 
-
+/*
   .container {
     position: relative;
     width: 50%;
@@ -121,7 +168,7 @@ background-color: #fff0cf;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(color(primary));
+  
 
   }
   
@@ -142,7 +189,31 @@ background-color: #fff0cf;
   }
 }
 
+*/
+.user-gallery-gallery{
+  position:relative;
+}
+
+.content{
+  opacity:0;
+  font-size: 40px;
+  position:absolute;
+  top:30rem;
+  left:15rem;
  
+}
+
+
+.user-gallery-gallery .content:hover { opacity:1; }      
+.user-gallery-gallery .content .text1 {
+height:0;
+opacity:1;
+transition-delay: 0s;
+transition-duration: 0.5s;
+}
+
+
+
 @keyframes slide-in {
   0% {
     transform: translateX(-200rem);
@@ -150,6 +221,7 @@ background-color: #fff0cf;
   100% {
     transform: translateX(0);
   }
+}
 }
 
 

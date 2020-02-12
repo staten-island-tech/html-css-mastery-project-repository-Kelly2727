@@ -103,8 +103,35 @@ html {
   background-image: linear-gradient(to right bottom, rgba(139, 255, 249, 0.5), rgba(245, 225, 182, 0.5)), url(../dist/media/map.png);
   background-position: top;
   background-size: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%);
+  /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100vh, 0% 100%);*/
+}
+
+.header .covermap {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  height: auto;
+  width: 20rem;
+  position: absolute;
+}
+
+@media (min-width: 600px) {
+  .header .covermap {
+    width: auto;
+    height: 35rem;
+    left: 52%;
+    top: 40%;
+  }
+}
+
+@media (min-width: 900px) {
+  .header .covermap {
+    top: 10%;
+    left: 50%;
+    height: auto;
+    width: 70rem;
+  }
 }
 
 .header .text-box {
@@ -131,16 +158,9 @@ html {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  /*text-transform: uppercase;*/
   width: 100vw;
   text-align: center;
   font-weight: 700;
-  -webkit-animation-name: slide-in;
-          animation-name: slide-in;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
 }
 
 .header .heading-primary .heading-primary-main {
@@ -171,7 +191,11 @@ html {
   width: 90vw;
   margin: 0 auto;
   text-align: center;
-  color: white;
+  color: #003f7f;
+  -webkit-transition-delay: 2.1s;
+          transition-delay: 2.1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 @media (min-width: 900px) {
@@ -180,8 +204,84 @@ html {
   }
 }
 
+.header .heading-primary .coverplane {
+  position: absolute;
+  top: 85%;
+  left: 72%;
+  height: auto;
+  width: 5rem;
+  -webkit-animation-name: slide-in;
+          animation-name: slide-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@media (min-width: 600px) {
+  .header .heading-primary .coverplane {
+    width: auto;
+    height: 10rem;
+    left: 45rem;
+    top: 20rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .header .heading-primary .coverplane {
+    top: 55%;
+    left: 57%;
+    height: auto;
+    width: 27rem;
+  }
+}
+
 .cities {
   background-color: #fff0cf;
+  /*
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .user-gallery-images{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+  
+
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+*/
 }
 
 .cities .cities-text-box {
@@ -200,44 +300,29 @@ html {
   }
 }
 
-.cities .container {
+.cities .user-gallery-gallery {
   position: relative;
-  width: 50%;
 }
 
-.cities .user-gallery-images {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.cities .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+.cities .content {
   opacity: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  background-color: #8bfff9;
+  font-size: 40px;
+  position: absolute;
+  top: 30rem;
+  left: 15rem;
 }
 
-.cities .container:hover .overlay {
+.cities .user-gallery-gallery .content:hover {
   opacity: 1;
 }
 
-.cities .text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+.cities .user-gallery-gallery .content .text1 {
+  height: 0;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 @-webkit-keyframes slide-in {
