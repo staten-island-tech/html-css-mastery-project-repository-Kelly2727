@@ -17,6 +17,8 @@ body {
     position: relative;
     height: 100vh;
 
+    
+
     .covertop{
       position: absolute;
       top: 20%;
@@ -185,11 +187,12 @@ background-color: #fff0cf;
   margin: 0 auto;
   /*text-align: center;*/
   color: rgb(56, 56, 56);
+
   @include laptop {
     font-size: 2rem;
   }
-}
 
+}
 
 .user-gallery-gallery{
   position:relative;
