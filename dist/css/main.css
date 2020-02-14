@@ -305,6 +305,7 @@ html {
 @media (min-width: 900px) {
   .cities .cities-text-box {
     font-size: 2rem;
+    height: 50%;
   }
 }
 
@@ -392,7 +393,7 @@ html {
     font-size: 40px;
     position: absolute;
     top: 30rem;
-    left: 71rem;
+    left: 70rem;
   }
 }
 
@@ -433,7 +434,7 @@ html {
     font-size: 40px;
     position: absolute;
     top: 30rem;
-    left: 129rem;
+    left: 127rem;
   }
 }
 
@@ -474,5 +475,20 @@ html {
 
 .food {
   background-color: #77435d;
+  /*.card1{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-side{
+    height: 20rem;
+    width: auto;
+    font-size: 15px;
+    color: white;
+    backface-visibility: hidden;
+  }*/
 }
 /*# sourceMappingURL=main.css.map */
