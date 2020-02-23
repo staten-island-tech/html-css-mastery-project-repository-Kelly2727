@@ -280,6 +280,10 @@ html {
   font-family: 'Sigmar One', cursive;
 }
 
+body {
+  cursor: url(../dist/media/cursorkiwi.cur), auto;
+}
+
 .header {
   position: relative;
   height: 100vh;
