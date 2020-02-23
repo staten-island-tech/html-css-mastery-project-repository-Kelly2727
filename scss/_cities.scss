@@ -1,0 +1,153 @@
+@import "_variables.scss";
+
+.cities{
+    border-style: dashed;
+    color: #77435d; 
+    background-color: #fff0cf;
+    
+    
+    .cities-text-box{
+      font-family: 'Lato', sans-serif;
+      font-weight: 100;
+      font-size: 1.7rem;
+      width: 70vw;
+      margin: 0 auto;
+      
+    
+      /*text-align: center;*/
+      color: rgb(56, 56, 56);
+    
+      @include laptop {
+        font-size: 2rem;
+        height: 50%;
+      }
+    
+    }
+    
+    .user-gallery-gallery{
+      position:relative;
+    }
+    
+    .content{
+      opacity:0;
+      font-size: 40px;
+      position:absolute;
+      top:15rem;
+      left:3rem;
+    
+      @include tablet{
+        opacity:0;
+        font-size: 40px;
+        position:absolute;
+        top:35rem;
+        left:20rem;
+      }
+    
+      @include laptop{
+        opacity:0;
+        font-size: 40px;
+        position:absolute;
+        top:30rem;
+        left:14rem;
+      }
+    }
+    .text1{
+      font-size: 4rem;
+      color: white;
+    }
+    .text2{
+      font-size: 3.7rem;
+      color: white;
+    }
+    
+    .text3{
+      font-size: 4rem;
+      color: white;
+    }
+    
+    .user-gallery-gallery .content:hover { opacity:1; }      
+    .user-gallery-gallery .content .text1 {
+    height:0;
+    opacity:1;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    }
+    
+    .content1{
+      opacity:0;
+      font-size: 40px;
+      position:absolute;
+      top:39rem;
+      left:4rem;
+      
+      @include tablet{
+        opacity:0;
+        font-size: 40px;
+        position:absolute;
+        top:80rem;
+        left:20rem;
+      }
+    
+      @include laptop{
+        opacity:0;
+        font-size: 40px;
+        position:absolute;
+        top:30rem;
+        left:70rem;
+      }
+     
+    }
+    
+    
+    .user-gallery-gallery .content1:hover { opacity:1; }      
+    .user-gallery-gallery .content1 .text2 {
+    height:0;
+    opacity:1;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    }
+    
+    .content2{
+      opacity:0;
+      font-size: 40px;
+      position:absolute;
+      top:62rem;
+      left:4rem;
+    
+      @include tablet{
+        opacity:0;
+        font-size: 40px;
+        position:absolute;
+        top:130rem;
+        left:20rem;
+      }
+    
+      @include laptop{
+        opacity:0;
+        font-size: 40px;
+        position:absolute;
+        top:30rem;
+        left:127rem;
+      }
+     
+     
+    }
+    
+    
+    .user-gallery-gallery .content2:hover { opacity:1; }      
+    .user-gallery-gallery .content2 .text3 {
+    height:0;
+    opacity:1;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    }
+    
+    @keyframes slide-in {
+      0% {
+        transform: translateX(-200rem);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    }
