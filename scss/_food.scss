@@ -37,12 +37,13 @@
             transition: all 1s;
             }
 
+        }
         .card1:hover .card1-side-front{
             transform: rotateY(-180deg);}
 
         .card1:hover .card1-side-back{
             transform: rotateY(0deg);} 
-        }}  
+        }  
 
     
     }

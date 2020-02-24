@@ -271,6 +271,60 @@
   }
 }
 
+.food {
+  background-color: #77435d;
+}
+
+.food .card1 {
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.food .card1 .card-side {
+  height: 20rem;
+  width: auto;
+  font-size: 15px;
+  color: white;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.food .card1 .card-side .card1-side-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.food .card1 .card-side .card1-side-back {
+  background-color: #f5e1b6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.food .card1 .card1:hover .card1-side-front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.food .card1 .card1:hover .card1-side-back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -281,7 +335,7 @@ html {
 }
 
 body {
-  cursor: url(../dist/media/cursorkiwi.cur), auto;
+  cursor: url(../dist/media/newcursor.png), auto;
 }
 
 .header {
@@ -477,9 +531,7 @@ body {
   }
 }
 
-.food {
-  background-color: #77435d;
-  /*.card1{
+/*.card1{
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
@@ -494,5 +546,4 @@ body {
     color: white;
     backface-visibility: hidden;
   }*/
-}
 /*# sourceMappingURL=main.css.map */
