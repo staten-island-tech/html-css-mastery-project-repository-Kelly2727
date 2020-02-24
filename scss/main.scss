@@ -1,6 +1,8 @@
 @import "_variables.scss";
 @import "_usergallery.scss";
 @import "_cities.scss";
+@import "_food.scss";
+
 
 html {
   margin: 0;
@@ -180,8 +182,6 @@ body {
 
 
 
-.food{
-  background-color: #77435d;
 
   /*.card1{
     perspective: 150rem;
