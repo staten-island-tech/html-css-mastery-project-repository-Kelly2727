@@ -1,49 +1,256 @@
 @import "_variables.scss";
 
 .food{
-    background-color: #77435d;
+    .text-box2 {
+        position: absolute;
+        /* bottom: 0%; */
+        height: 10rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 5rem;
+     
+      }
+
+   background-color: #f3c180;
  
-    .card1{
-        perspective: 150rem;
-        -moz-perspective: 150rem;
+    .card-side{
+        position: absolute;
+        height: auto;
+        width: 20rem;
+        left:5rem;
+        transform-style: preserve-3d;
+        font-size: .8rem;
+        color: white;
+        transition: all 0.5s ease;
+
+       /*  @include tablet{ 
+            width: 20rem;
+            left:5rem;
+            font-size: .8rem;}
+    
+        @include laptop{ 
+            width: 20rem;
+            left:5rem;
+            font-size: .8rem;} */
+        
+        .card1{
+        left:5rem;
+        width: 20rem;
+        height:auto;
         position: relative;
-        margin-top: 50px;
-        margin-left: auto;
+        margin-top: 0rem;
+        margin-left: 0rem;
         margin-right: auto;
         
-          
-      .card-side{
-        height: 20rem;
-        width: auto;
-        font-size: 15px;
-        color: white;
-        backface-visibility: hidden;
+
+        .card-side:hover{
+            transform: rotateY(/* - */180deg);}
 
             .card1-side-front{
             position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            transition: all 1s;
+            height: 20rem;
+            width: 30rem;
+            left:-5.5rem;
+            backface-visibility: hidden;
+             @include tablet{ 
+                 top:5rem;
+                width: 23rem;
+                left:0rem;
+                font-size: .8rem;}
+                @include laptop{
+                    top: 5rem;
+                    width: 30rem;
+                    left:0rem;}
+/*             @include tablet{ 
+                    width: 20rem;
+                    left:5rem;
+                    font-size: .8rem;} */
+            
             }
 
              .card1-side-back{
             background-color: #f5e1b6;
             position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            transform: rotateY(-180deg);
-            transition: all 1s;
-            }
+            height: auto;
+            width: 30rem;
+            left:-5.5rem;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+            @include tablet{ 
+                top:5rem;
+                width: 23rem;
+                left:0rem;
+                font-size: .8rem;}
+                @include laptop{
+                    top: 5rem;
+                    width: 30rem;
+                    left:0rem;}
+/*             @include tablet{ 
+                    width: 20rem;
+                    left:5rem;
+                    font-size: .8rem;} */
 
-        }
-        .card1:hover .card1-side-front{
+            }}}
+
+            
+      .card-sidee{
+        position: absolute;
+        height: auto;
+        width: 20rem;
+        left: 25rem;
+        /* height: 20rem;
+        width: auto; */
+        transform-style: preserve-3d;
+        font-size: .8rem;
+        color: white;
+        /* backface-visibility: hidden; */
+        transition: all 0.5s ease;
+            
+            .card2{
+                /* perspective: 150rem;
+                -moz-perspective: 150rem; */
+                width: 20rem;
+                left: -5.5rem; 
+                top: 10rem;
+                height:auto;
+                position: relative;
+                margin-top: 0rem;
+                margin-left: 0rem;
+                margin-right: auto;
+                @include tablet{
+                    top: 5rem; 
+                    width: 23rem;
+                    left:10rem;
+                    font-size: .8rem;}
+                    @include laptop{
+                        top: 5rem;
+                        width: 30rem;
+                        left:50rem;}
+                
+                
+        
+                .card-sidee:hover{
+                    transform: rotateY(/* - */180deg);}
+        
+                    .card2-side-front{
+                        position: absolute;
+                        height: auto;
+                        width: 30rem;
+                        left:0rem;
+                        backface-visibility: hidden;
+                        @include tablet{ 
+                            width: 23rem;
+                            left:25rem;
+                            font-size: .8rem;}}
+
+        
+                     .card2-side-back{
+                    background-color: #f5e1b6;
+                    height: auto;
+                    width: 30rem;
+                    left:0rem;
+                    backface-visibility: hidden;
+                    transform: rotateY(/* - */180deg);
+                        @include tablet{ 
+                            width: 23rem;
+                            left:25rem;
+                            font-size: .8rem;}}}}
+
+
+                    .card-sideee{
+                        position: absolute;
+                        height: auto;
+                        width: 20rem;
+                        left: 1rem;
+                        transform-style: preserve-3d;
+                        font-size: .8rem;
+                        color: white;
+                        backface-visibility: hidden; 
+                        transition: all 0.5s ease;
+                        
+                        @include tablet{
+
+                            width: 23rem;
+                            left:15rem;
+                            font-size: .8rem;}
+                            @include laptop{
+                                top: 235rem;
+                                width: 30rem;
+                                left:50rem;}
+                            
+                        .card3{
+                        /* perspective: 150rem;
+                        -moz-perspective: 150rem; */
+                        width: 20rem;
+                        left: 2rem;
+                        height:auto;
+                        position: relative;
+                        margin-top: 0rem;
+                        margin-left: 0rem;
+                        margin-right: auto;
+                        
+                        @include tablet{
+                            top: 5rem; 
+                            width: 23rem;
+                            left:15rem;
+                            font-size: .8rem;}
+                            @include laptop{
+                                top: 5rem;
+                                width: 30rem;
+                                left:75rem;}
+                        
+                
+                        .card-sideee:hover{
+                            transform: rotateY(/* - */180deg);}
+                
+                            .card3-side-front{
+                                position: absolute;
+                                height: auto;
+                                top: 50rem;
+                                width: 30rem;
+                                left:2rem;
+                                backface-visibility: hidden;
+
+                                @include tablet{
+                                    top: 5rem; 
+                                    width: 23rem;
+                                    left:15rem;
+                                    font-size: .8rem;}
+                                    @include laptop{
+                                        top: 5rem;
+                                        width: 30rem;
+                                        left:5rem;}
+                           
+                            }
+                
+                             .card3-side-back{
+                            background-color: #f5e1b6;
+
+                            position: absolute;
+                            right: auto;
+                            top: 30rem;
+                            width: 30rem;
+                            left:2rem;
+                            backface-visibility: hidden;
+                            transform: rotateY(/* - */180deg);
+                                @include tablet{ 
+                                    top: 5rem;
+                                    width: 23rem;
+                                    left:40rem;
+                                    font-size: .8rem;}
+                                @include laptop{
+                                    top: 5rem;
+                                    width: 30rem;
+                                    left:5rem;}}
+                            
+                            /* transition: all 1s; */
+                            }}}
+                        
+        
+       /*  .card1:hover .card1-side-front{
             transform: rotateY(-180deg);}
 
         .card1:hover .card1-side-back{
-            transform: rotateY(0deg);} 
-        }  
-
-    
-    }
+            transform: rotateY(0deg);} */ 
+         
