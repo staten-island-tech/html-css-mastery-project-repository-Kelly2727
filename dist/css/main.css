@@ -297,15 +297,24 @@
   color: white;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  /*  @include tablet{ 
-            width: 20rem;
-            left:5rem;
-            font-size: .8rem;}
-    
-        @include laptop{ 
-            width: 20rem;
-            left:5rem;
-            font-size: .8rem;} */
+}
+
+@media (min-width: 600px) {
+  .food .card-side {
+    width: 23rem;
+    left: 5rem;
+    font-size: .8rem;
+    top: 300rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .food .card-side {
+    width: 20rem;
+    left: 5rem;
+    top: 235rem;
+    font-size: .8rem;
+  }
 }
 
 .food .card-side .card1 {
@@ -330,10 +339,6 @@
   left: -5.5rem;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  /*             @include tablet{ 
-                    width: 20rem;
-                    left:5rem;
-                    font-size: .8rem;} */
 }
 
 @media (min-width: 600px) {
@@ -350,6 +355,15 @@
     top: 5rem;
     width: 30rem;
     left: 0rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .food .card-side .card1 .card1-side-front {
+    top: 5rem;
+    width: 20rem;
+    left: 5rem;
+    font-size: .8rem;
   }
 }
 
@@ -363,10 +377,6 @@
           backface-visibility: hidden;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  /*             @include tablet{ 
-                    width: 20rem;
-                    left:5rem;
-                    font-size: .8rem;} */
 }
 
 @media (min-width: 600px) {
@@ -383,6 +393,15 @@
     top: 5rem;
     width: 30rem;
     left: 0rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .food .card-side .card1 .card1-side-back {
+    top: 5rem;
+    width: 20rem;
+    left: 5rem;
+    font-size: .8rem;
   }
 }
 
@@ -402,6 +421,23 @@
   transition: all 0.5s ease;
 }
 
+@media (min-width: 600px) {
+  .food .card-sidee {
+    width: 23rem;
+    left: 10rem;
+    font-size: .8rem;
+    top: 160rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .food .card-sidee {
+    top: 235rem;
+    width: 30rem;
+    left: 50rem;
+  }
+}
+
 .food .card-sidee .card2 {
   /* perspective: 150rem;
                 -moz-perspective: 150rem; */
@@ -419,7 +455,7 @@
   .food .card-sidee .card2 {
     top: 5rem;
     width: 23rem;
-    left: 10rem;
+    left: 9rem;
     font-size: .8rem;
   }
 }
@@ -428,7 +464,7 @@
   .food .card-sidee .card2 {
     top: 5rem;
     width: 30rem;
-    left: 50rem;
+    left: 40rem;
   }
 }
 
@@ -441,7 +477,7 @@
   position: absolute;
   height: auto;
   width: 30rem;
-  left: 0rem;
+  left: 10rem;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -449,7 +485,7 @@
 @media (min-width: 600px) {
   .food .card-sidee .card2 .card2-side-front {
     width: 23rem;
-    left: 25rem;
+    left: 9rem;
     font-size: .8rem;
   }
 }
@@ -468,7 +504,7 @@
 @media (min-width: 600px) {
   .food .card-sidee .card2 .card2-side-back {
     width: 23rem;
-    left: 25rem;
+    left: 9rem;
     font-size: .8rem;
   }
 }

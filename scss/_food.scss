@@ -24,15 +24,18 @@
         color: white;
         transition: all 0.5s ease;
 
-       /*  @include tablet{ 
-            width: 20rem;
+        @include tablet{ 
+            width: 23rem;
             left:5rem;
-            font-size: .8rem;}
+            font-size: .8rem;
+            top: 300rem;
+        }
     
         @include laptop{ 
             width: 20rem;
             left:5rem;
-            font-size: .8rem;} */
+            top: 235rem;
+            font-size: .8rem;} 
         
         .card1{
         left:5rem;
@@ -62,10 +65,11 @@
                     top: 5rem;
                     width: 30rem;
                     left:0rem;}
-/*             @include tablet{ 
+                @include tablet{ 
+                    top: 5rem;
                     width: 20rem;
                     left:5rem;
-                    font-size: .8rem;} */
+                    font-size: .8rem;} 
             
             }
 
@@ -86,10 +90,11 @@
                     top: 5rem;
                     width: 30rem;
                     left:0rem;}
-/*             @include tablet{ 
+          @include tablet{ 
+                    top: 5rem;
                     width: 20rem;
                     left:5rem;
-                    font-size: .8rem;} */
+                    font-size: .8rem;} 
 
             }}}
 
@@ -106,6 +111,16 @@
         color: white;
         /* backface-visibility: hidden; */
         transition: all 0.5s ease;
+        @include tablet{
+            width: 23rem;
+            left: 10rem;
+            font-size: .8rem;
+            top:160rem;}
+            @include laptop{
+                top: 235rem;
+                width: 30rem;
+                left:50rem;}
+            
             
             .card2{
                 /* perspective: 150rem;
@@ -121,12 +136,12 @@
                 @include tablet{
                     top: 5rem; 
                     width: 23rem;
-                    left:10rem;
+                    left:9rem;
                     font-size: .8rem;}
                     @include laptop{
                         top: 5rem;
                         width: 30rem;
-                        left:50rem;}
+                        left:40rem;}
                 
                 
         
@@ -137,11 +152,11 @@
                         position: absolute;
                         height: auto;
                         width: 30rem;
-                        left:0rem;
+                        left:10rem;
                         backface-visibility: hidden;
                         @include tablet{ 
                             width: 23rem;
-                            left:25rem;
+                            left:9rem;
                             font-size: .8rem;}}
 
         
@@ -154,7 +169,7 @@
                     transform: rotateY(/* - */180deg);
                         @include tablet{ 
                             width: 23rem;
-                            left:25rem;
+                            left:9rem;
                             font-size: .8rem;}}}}
 
 
@@ -170,7 +185,6 @@
                         transition: all 0.5s ease;
                         
                         @include tablet{
-
                             width: 23rem;
                             left:15rem;
                             font-size: .8rem;}
