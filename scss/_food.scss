@@ -3,7 +3,6 @@
 .food{
     .text-box2 {
         position: absolute;
-        /* bottom: 0%; */
         height: 10rem;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -48,7 +47,7 @@
         
 
         .card-side:hover{
-            transform: rotateY(/* - */180deg);}
+            transform: rotateY(180deg);}
 
             .card1-side-front{
             position: absolute;
@@ -65,12 +64,6 @@
                     top: 5rem;
                     width: 30rem;
                     left:0rem;}
-                @include tablet{ 
-                    top: 5rem;
-                    width: 20rem;
-                    left:5rem;
-                    font-size: .8rem;} 
-            
             }
 
              .card1-side-back{
@@ -90,11 +83,6 @@
                     top: 5rem;
                     width: 30rem;
                     left:0rem;}
-          @include tablet{ 
-                    top: 5rem;
-                    width: 20rem;
-                    left:5rem;
-                    font-size: .8rem;} 
 
             }}}
 
@@ -104,12 +92,9 @@
         height: auto;
         width: 20rem;
         left: 25rem;
-        /* height: 20rem;
-        width: auto; */
         transform-style: preserve-3d;
         font-size: .8rem;
         color: white;
-        /* backface-visibility: hidden; */
         transition: all 0.5s ease;
         @include tablet{
             width: 23rem;
@@ -123,9 +108,7 @@
             
             
             .card2{
-                /* perspective: 150rem;
-                -moz-perspective: 150rem; */
-                width: 20rem;
+            
                 left: -5.5rem; 
                 top: 10rem;
                 height:auto;
@@ -146,7 +129,7 @@
                 
         
                 .card-sidee:hover{
-                    transform: rotateY(/* - */180deg);}
+                    transform: rotateY(180deg);}
         
                     .card2-side-front{
                         position: absolute;
@@ -166,7 +149,7 @@
                     width: 30rem;
                     left:0rem;
                     backface-visibility: hidden;
-                    transform: rotateY(/* - */180deg);
+                    transform: rotateY(180deg);
                         @include tablet{ 
                             width: 23rem;
                             left:9rem;
@@ -194,8 +177,7 @@
                                 left:50rem;}
                             
                         .card3{
-                        /* perspective: 150rem;
-                        -moz-perspective: 150rem; */
+
                         width: 20rem;
                         left: 2rem;
                         height:auto;
@@ -216,7 +198,7 @@
                         
                 
                         .card-sideee:hover{
-                            transform: rotateY(/* - */180deg);}
+                            transform: rotateY(180deg);}
                 
                             .card3-side-front{
                                 position: absolute;
@@ -224,7 +206,7 @@
                                 top: 50rem;
                                 width: 30rem;
                                 left:2rem;
-                                backface-visibility: hidden;
+                               /*  backface-visibility: hidden; */
 
                                 @include tablet{
                                     top: 5rem; 
@@ -246,8 +228,8 @@
                             top: 30rem;
                             width: 30rem;
                             left:2rem;
-                            backface-visibility: hidden;
-                            transform: rotateY(/* - */180deg);
+                         /*    backface-visibility: hidden; */
+                            transform: rotateY(180deg);
                                 @include tablet{ 
                                     top: 5rem;
                                     width: 23rem;
@@ -257,14 +239,8 @@
                                     top: 5rem;
                                     width: 30rem;
                                     left:5rem;}}
-                            
-                            /* transition: all 1s; */
+                       
                             }}}
                         
         
-       /*  .card1:hover .card1-side-front{
-            transform: rotateY(-180deg);}
-
-        .card1:hover .card1-side-back{
-            transform: rotateY(0deg);} */ 
-         
+ 

@@ -277,7 +277,6 @@
 
 .food .text-box2 {
   position: absolute;
-  /* bottom: 0%; */
   height: 10rem;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -358,15 +357,6 @@
   }
 }
 
-@media (min-width: 600px) {
-  .food .card-side .card1 .card1-side-front {
-    top: 5rem;
-    width: 20rem;
-    left: 5rem;
-    font-size: .8rem;
-  }
-}
-
 .food .card-side .card1 .card1-side-back {
   background-color: #f5e1b6;
   position: absolute;
@@ -396,27 +386,15 @@
   }
 }
 
-@media (min-width: 600px) {
-  .food .card-side .card1 .card1-side-back {
-    top: 5rem;
-    width: 20rem;
-    left: 5rem;
-    font-size: .8rem;
-  }
-}
-
 .food .card-sidee {
   position: absolute;
   height: auto;
   width: 20rem;
   left: 25rem;
-  /* height: 20rem;
-        width: auto; */
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   font-size: .8rem;
   color: white;
-  /* backface-visibility: hidden; */
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -439,9 +417,6 @@
 }
 
 .food .card-sidee .card2 {
-  /* perspective: 150rem;
-                -moz-perspective: 150rem; */
-  width: 20rem;
   left: -5.5rem;
   top: 10rem;
   height: auto;
@@ -541,8 +516,6 @@
 }
 
 .food .card-sideee .card3 {
-  /* perspective: 150rem;
-                        -moz-perspective: 150rem; */
   width: 20rem;
   left: 2rem;
   height: auto;
@@ -550,7 +523,6 @@
   margin-top: 0rem;
   margin-left: 0rem;
   margin-right: auto;
-  /* transition: all 1s; */
 }
 
 @media (min-width: 600px) {
@@ -581,8 +553,7 @@
   top: 50rem;
   width: 30rem;
   left: 2rem;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  /*  backface-visibility: hidden; */
 }
 
 @media (min-width: 600px) {
@@ -609,8 +580,7 @@
   top: 30rem;
   width: 30rem;
   left: 2rem;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  /*    backface-visibility: hidden; */
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -632,11 +602,6 @@
   }
 }
 
-/*  .card1:hover .card1-side-front{
-            transform: rotateY(-180deg);}
-
-        .card1:hover .card1-side-back{
-            transform: rotateY(0deg);} */
 html {
   margin: 0;
   padding: 0;
