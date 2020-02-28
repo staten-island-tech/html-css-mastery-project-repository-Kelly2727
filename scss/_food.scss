@@ -17,6 +17,7 @@
         position: absolute;
         height: auto;
         width: 20rem;
+        top: 150rem;
         left:5rem;
         transform-style: preserve-3d;
         font-size: .8rem;
@@ -55,15 +56,6 @@
             width: 30rem;
             left:-5.5rem;
             backface-visibility: hidden;
-             @include tablet{ 
-                 top:5rem;
-                width: 23rem;
-                left:0rem;
-                font-size: .8rem;}
-                @include laptop{
-                    top: 5rem;
-                    width: 30rem;
-                    left:0rem;}
             }
 
              .card1-side-back{
@@ -74,15 +66,6 @@
             left:-5.5rem;
             backface-visibility: hidden;
             transform: rotateY(180deg);
-            @include tablet{ 
-                top:5rem;
-                width: 23rem;
-                left:0rem;
-                font-size: .8rem;}
-                @include laptop{
-                    top: 5rem;
-                    width: 30rem;
-                    left:0rem;}
 
             }}}
 
@@ -116,15 +99,6 @@
                 margin-top: 0rem;
                 margin-left: 0rem;
                 margin-right: auto;
-                @include tablet{
-                    top: 5rem; 
-                    width: 23rem;
-                    left:9rem;
-                    font-size: .8rem;}
-                    @include laptop{
-                        top: 5rem;
-                        width: 30rem;
-                        left:40rem;}
                 
                 
         
@@ -137,11 +111,7 @@
                         width: 30rem;
                         left:10rem;
                         backface-visibility: hidden;
-                        @include tablet{ 
-                            width: 23rem;
-                            left:9rem;
-                            font-size: .8rem;}}
-
+                       
         
                      .card2-side-back{
                     background-color: #f5e1b6;
@@ -149,18 +119,14 @@
                     width: 30rem;
                     left:0rem;
                     backface-visibility: hidden;
-                    transform: rotateY(180deg);
-                        @include tablet{ 
-                            width: 23rem;
-                            left:9rem;
-                            font-size: .8rem;}}}}
+                    transform: rotateY(180deg);}}}
 
 
                     .card-sideee{
                         position: absolute;
                         height: auto;
                         width: 20rem;
-                        left: 1rem;
+                        left: 0rem;
                         transform-style: preserve-3d;
                         font-size: .8rem;
                         color: white;
@@ -185,16 +151,7 @@
                         margin-top: 0rem;
                         margin-left: 0rem;
                         margin-right: auto;
-                        
-                        @include tablet{
-                            top: 5rem; 
-                            width: 23rem;
-                            left:15rem;
-                            font-size: .8rem;}
-                            @include laptop{
-                                top: 5rem;
-                                width: 30rem;
-                                left:75rem;}
+                    
                         
                 
                         .card-sideee:hover{
@@ -206,18 +163,8 @@
                                 top: 50rem;
                                 width: 30rem;
                                 left:2rem;
-                               /*  backface-visibility: hidden; */
 
-                                @include tablet{
-                                    top: 5rem; 
-                                    width: 23rem;
-                                    left:15rem;
-                                    font-size: .8rem;}
-                                    @include laptop{
-                                        top: 5rem;
-                                        width: 30rem;
-                                        left:5rem;}
-                           
+                             
                             }
                 
                              .card3-side-back{
@@ -228,19 +175,10 @@
                             top: 30rem;
                             width: 30rem;
                             left:2rem;
-                         /*    backface-visibility: hidden; */
-                            transform: rotateY(180deg);
-                                @include tablet{ 
-                                    top: 5rem;
-                                    width: 23rem;
-                                    left:40rem;
-                                    font-size: .8rem;}
-                                @include laptop{
-                                    top: 5rem;
-                                    width: 30rem;
-                                    left:5rem;}}
+                            backface-visibility: hidden; 
+                            transform: rotateY(180deg);}
                        
-                            }}}
+                            }}}}
                         
         
  
