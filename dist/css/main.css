@@ -288,43 +288,42 @@
 .food .card-side {
   position: absolute;
   height: auto;
-  width: 20rem;
-  top: 150rem;
-  left: 5rem;
+  width: 30rem;
+  left: 2rem;
+  top: 120rem;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   font-size: .8rem;
-  color: white;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 @media (min-width: 600px) {
   .food .card-side {
+    top: 152rem;
     width: 23rem;
-    left: 5rem;
+    left: 2rem;
     font-size: .8rem;
-    top: 300rem;
   }
 }
 
 @media (min-width: 900px) {
   .food .card-side {
-    width: 20rem;
-    left: 5rem;
-    top: 235rem;
-    font-size: .8rem;
+    top: 120rem;
+    width: 30rem;
+    left: 17rem;
   }
 }
 
 .food .card-side .card1 {
-  left: 5rem;
   width: 20rem;
   height: auto;
   position: relative;
   margin-top: 0rem;
   margin-left: 0rem;
   margin-right: auto;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .food .card-side .card1 .card-side:hover {
@@ -336,17 +335,16 @@
   position: absolute;
   height: 20rem;
   width: 30rem;
-  left: -5.5rem;
+  overflow: hidden;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
 .food .card-side .card1 .card1-side-back {
-  background-color: #f5e1b6;
   position: absolute;
-  height: auto;
+  height: 20rem;
   width: 30rem;
-  left: -5.5rem;
+  overflow: hidden;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform: rotateY(180deg);
@@ -356,34 +354,36 @@
 .food .card-sidee {
   position: absolute;
   height: auto;
-  width: 20rem;
-  left: 25rem;
+  width: 30rem;
+  left: 9.5rem;
+  top: 125rem;
+  width: auto;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   font-size: .8rem;
-  color: white;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 @media (min-width: 600px) {
   .food .card-sidee {
+    top: 147rem;
     width: 23rem;
-    left: 10rem;
+    left: 48rem;
     font-size: .8rem;
-    top: 160rem;
   }
 }
 
 @media (min-width: 900px) {
   .food .card-sidee {
-    top: 235rem;
+    top: 115rem;
     width: 30rem;
-    left: 50rem;
+    left: 85rem;
   }
 }
 
 .food .card-sidee .card2 {
+  width: 20rem;
   left: -5.5rem;
   top: 10rem;
   height: auto;
@@ -402,13 +402,12 @@
   position: absolute;
   height: auto;
   width: 30rem;
-  left: 10rem;
+  left: 0rem;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
-.food .card-sidee .card2 .card2-side-front .card2-side-back {
-  background-color: #f5e1b6;
+.food .card-sidee .card2 .card2-side-back {
   height: auto;
   width: 30rem;
   left: 0rem;
@@ -418,7 +417,7 @@
           transform: rotateY(180deg);
 }
 
-.food .card-sidee .card-sideee {
+.food .card-sideee {
   position: absolute;
   height: auto;
   width: 20rem;
@@ -426,7 +425,6 @@
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   font-size: .8rem;
-  color: white;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transition: all 0.5s ease;
@@ -434,22 +432,23 @@
 }
 
 @media (min-width: 600px) {
-  .food .card-sidee .card-sideee {
+  .food .card-sideee {
+    top: 275rem;
     width: 23rem;
-    left: 15rem;
+    left: 19rem;
     font-size: .8rem;
   }
 }
 
 @media (min-width: 900px) {
-  .food .card-sidee .card-sideee {
-    top: 235rem;
+  .food .card-sideee {
+    top: 190rem;
     width: 30rem;
-    left: 50rem;
+    left: 120rem;
   }
 }
 
-.food .card-sidee .card-sideee .card3 {
+.food .card-sideee .card3 {
   width: 20rem;
   left: 2rem;
   height: auto;
@@ -459,30 +458,100 @@
   margin-right: auto;
 }
 
-.food .card-sidee .card-sideee .card3 .card-sideee:hover {
+.food .card-sideee .card3 .card-sideee:hover {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.food .card-sidee .card-sideee .card3 .card3-side-front {
+.food .card-sideee .card3 .card3-side-front {
   position: absolute;
   height: auto;
   top: 50rem;
   width: 30rem;
   left: 2rem;
+  z-index: 0rem;
 }
 
-.food .card-sidee .card-sideee .card3 .card3-side-back {
-  background-color: #f5e1b6;
+.food .card-sideee .card3 .card3-side-back {
   position: absolute;
-  right: auto;
-  top: 30rem;
+  height: 20rem;
   width: 30rem;
   left: 2rem;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+.animals {
+  background: #8bfff9;
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  color: gray;
+  font-size: 1rem;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.animals .text-box2 {
+  position: absolute;
+  height: 10rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 5rem;
+}
+
+.animals .animal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10%;
+}
+
+.animals .animal_box {
+  padding: 30px;
+  margin: 2%;
+  background: white;
+  width: 30%;
+  border: 1px solid #d6d6d6;
+  -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 3rem;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+.animals .animal_box .img {
+  width: 15rem;
+  height: auto;
+}
+
+.animals .animal:hover .animal_box {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  opacity: .5;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.animals .animal:hover .animal_box:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  opacity: 1;
+  -webkit-box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+          box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
 }
 
 html {
