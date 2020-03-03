@@ -273,6 +273,20 @@
 
 .food {
   background-color: #f3c180;
+  border-radius: 3rem;
+  height: 80rem;
+}
+
+@media (min-width: 600px) {
+  .food {
+    height: 65rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .food {
+    height: 60rem;
+  }
 }
 
 .food .text-box2 {
@@ -485,6 +499,8 @@
 
 .animals {
   background: #8bfff9;
+  border: #77435d;
+  border-style: dashed;
   font-family: 'Inconsolata', monospace;
   font-weight: bold;
   color: gray;
@@ -514,6 +530,18 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 10%;
+  font-size: 2rem;
+  height: 60rem;
+}
+
+.animals .animal .heading-primary-sub {
+  color: gray;
+  left: 50%;
+  top: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 6rem;
 }
 
 .animals .animal_box {
@@ -529,8 +557,8 @@
   transition: .2s all;
 }
 
-.animals .animal_box .img {
-  width: 15rem;
+.animals .animal_box .animal_img {
+  width: 25rem;
   height: auto;
 }
 
