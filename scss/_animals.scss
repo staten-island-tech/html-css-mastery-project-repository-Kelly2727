@@ -1,4 +1,4 @@
- @import "_variables.scss";
+@import "_variables.scss";
 .animals{
     .text-box2 {
         position: absolute;
@@ -27,32 +27,70 @@
         justify-content:center;
         margin:10%;
         font-size: 2rem;
-        height: 60rem;
-        
-        .heading-primary-sub{
-          color:gray;
-          left: 50%;
-          top: 90%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-          font-size: 6rem;
+        height: 120rem;
+        @include tablet{ 
+          height: 150rem;
+      }
+          @include laptop{
+            height: 60rem;
+              }
 
 
-        }
+    .text-box3 {
+      color: #77435d;
+      left: 50%;
+      top: 312rem;
+      font-family:'Sigmar One', cursive;
+      position: absolute;
+      height: 10rem;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 4.5rem;
+      @include tablet{
+        left: 50%;
+        top: 365rem;
+        font-size: 5rem;
+      }
+      @include laptop{
+        left: 50%;
+        top: 287rem;
+        font-size: 5rem;
+          }
+   
+    }
       }
       .animal_box{
         padding:30px;
         margin:2%;
         background:white;
-        width:30%;
+        width:90%;
         border:1px solid #d6d6d6;
         box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
         border-radius:3rem;
         transition:.2s all; 
+        @include tablet{ 
+          width: 50%;
+          height: auto;}
+          @include laptop{
+           width: 30%;
+           height: auto;
+              }
+              
+
+     
 
         .animal_img{ 
-            width: 25rem;
+            width: 20rem;
             height: auto; 
+            @include tablet{ 
+             width: 30rem;
+             height: auto;}
+             @include laptop{
+              width: 25rem;
+              height: auto;
+                 }
+                 
             
         }
       }
@@ -69,5 +107,3 @@
         box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
       }
         }
-
-
