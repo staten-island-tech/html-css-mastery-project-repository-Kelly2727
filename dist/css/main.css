@@ -645,7 +645,7 @@
 .footer {
   background-color: #ff9090;
   /*  border:#77435d; */
-  border-style: dashed;
+  /* border-style: dashed; */
   font-family: 'Inconsolata', monospace;
   font-weight: bold;
   /* color:rgb(0, 0, 0); */
